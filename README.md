@@ -68,7 +68,7 @@ To change the email address and password used to send the alert email, modify th
   ---------------------------------------------------------------------------------------------------------------------------------------------------------
                   
                                               Object Detection and Segmentation with YOLOv5
-This project demonstrates how to use YOLOv5 to perform object detection and segmentation on images and videos. Specifically, it includes the following functionalities:
+This project demonstrates how to use YOLOv5 to perform object detection and segmentation on images and videos on .ibynp. Specifically, it includes the following functionalities:
 
 Detection of objects in images and videos, with optional saving of the resulting images and text files containing the object labels and confidence scores.
 Segmentation of objects in images and videos, with optional hiding of the labels and confidence scores.
