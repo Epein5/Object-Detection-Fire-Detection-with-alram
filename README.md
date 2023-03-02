@@ -106,3 +106,62 @@ save_path = '/content/runs/detect/predict3/VID-20230302-WA0001.mp4'
 compressed_path = "/content/result_compressed.mp4"
 os.system(f"ffmpeg -i {save_path} -vcodec libx264 {compressed_path}")
 
+  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                          vehhicle crash Detection using yolov8
+  
+This project uses YOLOv8 object detection to detect fire in a video stream. When a fire is detected, an alert email is sent to a specified recipient.
+  Requirements
+To run this project, you'll need to install the following dependencies:
+
+Python 3.x
+OpenCV
+argparse
+smtplib
+numpy
+playsound
+ultralytics
+supervision
+  
+  Installation
+    pip install opencv-python argparse numpy smtplib playsound ultralytics supervision
+
+  Usage
+  python vc.py
+  
+  YOLOv8 Fire Detection
+This project uses YOLOv8 object detection to detect fire in a video stream. When a fire is detected, an alert email is sent to a specified recipient.
+
+Requirements
+To run this project, you'll need to install the following dependencies:
+
+Python 3.x
+OpenCV
+argparse
+smtplib
+numpy
+playsound
+ultralytics
+supervision
+Installation
+To install the required packages, run the following command:
+
+Copy code
+pip install opencv-python argparse numpy smtplib playsound ultralytics supervision
+Usage
+To use this program, run the following command:
+
+Copy code
+python fire_detection.py
+You can pass optional arguments to the script:
+
+--webcam-resolution: set the resolution of the video stream (default: 1280x720)
+Implementation
+The program reads frames from a video stream and applies YOLOv8 object detection to detect fire in the frames. If two bounding boxes intersect, an alert email is sent to a specified recipient. The program also displays the frames with bounding boxes and zone annotations.
+
+The program uses the following components:
+
+YOLOv8 model for object detection
+BoxAnnotator class from the supervision library to draw bounding boxes on frames
+PolygonZone class from the supervision library to define a polygonal zone
+PolygonZoneAnnotator class from the supervision library to draw the polygonal zone on frames
+intersect() function to check if two bounding boxes intersect
